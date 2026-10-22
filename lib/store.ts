@@ -78,22 +78,10 @@ export const useResumeStore = create<ResumeStore>()(
       setTemplate: (template) => set({ template }),
       reset: () => set({ ...sampleResume }),
     }),
-    { name: "re-fc-resume" },
+    {
+      name: "re-fc-resume",
+      // Rehydrate after mount so the server snapshot and the first client render match.
+      skipHydration: true,
+    },
   ),
 );
-
-export function selectResume(state: ResumeStore): ResumeData {
-  return {
-    fullName: state.fullName,
-    jobTitle: state.jobTitle,
-    email: state.email,
-    phone: state.phone,
-    location: state.location,
-    summary: state.summary,
-    experience: state.experience,
-    education: state.education,
-    skills: state.skills,
-    sectionOrder: state.sectionOrder,
-    template: state.template,
-  };
-}

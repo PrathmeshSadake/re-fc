@@ -10,9 +10,9 @@ import {
 } from "@dnd-kit/core";
 import { SortableContext, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Preview } from "@/components/Preview";
-import { selectResume, useResumeStore } from "@/lib/store";
+import { useResumeStore } from "@/lib/store";
 import { SECTION_LABELS, type SectionId } from "@/lib/types";
 
 function Field({
@@ -35,7 +35,7 @@ function Field({
 }
 
 function SortableSection({ id, children }: { id: SectionId; children: React.ReactNode }) {
-  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id });
+  const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id });
   return (
     <section
       ref={setNodeRef}
@@ -43,7 +43,14 @@ function SortableSection({ id, children }: { id: SectionId; children: React.Reac
       style={{ transform: CSS.Transform.toString(transform), transition }}
     >
       <header className="card-head">
-        <button type="button" className="handle" aria-label={`Reorder ${SECTION_LABELS[id]}`} {...attributes} {...listeners}>
+        <button
+          type="button"
+          className="handle"
+          aria-label={`Reorder ${SECTION_LABELS[id]}`}
+          {...attributes}
+          {...listeners}
+          ref={setActivatorNodeRef}
+        >
           ⋮⋮
         </button>
         <h2>{SECTION_LABELS[id]}</h2>
@@ -54,7 +61,11 @@ function SortableSection({ id, children }: { id: SectionId; children: React.Reac
 }
 
 export default function Builder() {
-  const resume = useResumeStore(selectResume);
+  const resume = useResumeStore();
+
+  useEffect(() => {
+    void useResumeStore.persist.rehydrate();
+  }, []);
   const setPersonal = useResumeStore((state) => state.setPersonal);
   const setSummary = useResumeStore((state) => state.setSummary);
   const updateExperience = useResumeStore((state) => state.updateExperience);
