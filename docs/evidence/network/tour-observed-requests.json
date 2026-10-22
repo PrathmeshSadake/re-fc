@@ -1,0 +1,84 @@
+{
+  "evidence_id": "ev_795c3363d9a3b993c2d439694e5fe58b73ebf59f4e271f579b27708778bbeeb5",
+  "note": "Guest navigation 2026-10-22. Asset responses omitted. Some late transactions were dropped when the scenario hit max-total-event-allocation-bytes.",
+  "responses": [
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/resumes",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/manifest.webmanifest",
+      "resource_type": "manifest"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/pubcache/published-resume-templates",
+      "resource_type": "xhr"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/api/auth/init_user",
+      "resource_type": "xhr"
+    },
+    {
+      "method": "POST",
+      "status": 200,
+      "url": "https://app.flowcv.com/clientlog",
+      "resource_type": "ping"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/login",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/signup",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/pricing",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/api/pricing/info",
+      "resource_type": "xhr"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/cover-letters",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/pubcache/published-letter-templates",
+      "resource_type": "xhr"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/job-tracker",
+      "resource_type": "document"
+    },
+    {
+      "method": "GET",
+      "status": 200,
+      "url": "https://app.flowcv.com/settings",
+      "resource_type": "document"
+    }
+  ]
+}

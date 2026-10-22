@@ -1,0 +1,92 @@
+{
+  "home": {
+    "evidence_id": "ev_53bef98a132c533601463218c20e6a409936bf6cf1bb3fe1edfc2aaa352d983f",
+    "requests": [
+      {
+        "method": "GET",
+        "type": "document",
+        "url": "https://flowcv.com/"
+      },
+      {
+        "method": "GET",
+        "type": "stylesheet",
+        "url": "https://flowcv.com/_astro/about.DiT3Hf6h.css"
+      },
+      {
+        "method": "GET",
+        "type": "stylesheet",
+        "url": "https://flowcv.com/_astro/_token_.CODZtcJl.css"
+      },
+      {
+        "method": "GET",
+        "type": "script",
+        "url": "https://flowcv.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      },
+      {
+        "method": "GET",
+        "type": "script",
+        "url": "https://flowcv.com/_astro/PageLayoutParent.astro_astro_type_script_index_0_lang.Cabco4Co.js"
+      },
+      {
+        "method": "GET",
+        "type": "manifest",
+        "url": "https://flowcv.com/manifest.webmanifest"
+      },
+      {
+        "method": "GET",
+        "type": "script",
+        "url": "https://flowcv.com/_astro/trackEvent.o7Gp2dCf.js"
+      },
+      {
+        "method": "POST",
+        "type": "ping",
+        "url": "https://flowcv.com/clientlog"
+      }
+    ]
+  },
+  "app_resumes": {
+    "evidence_id": "ev_d4b7f63d8de095a04ad2d744669eec65b45f5aa1c3b7dd8ca848f7d58e714deb",
+    "requests": [
+      {
+        "method": "GET",
+        "type": "document",
+        "url": "https://app.flowcv.com/resumes"
+      },
+      {
+        "method": "GET",
+        "type": "script",
+        "url": "https://app.flowcv.com/assets/index-76c0f4b1.js"
+      },
+      {
+        "method": "GET",
+        "type": "script",
+        "url": "https://app.flowcv.com/assets/vendor-3446ddb3.js"
+      },
+      {
+        "method": "GET",
+        "type": "stylesheet",
+        "url": "https://app.flowcv.com/assets/index-11e1b4cc.css"
+      },
+      {
+        "method": "GET",
+        "type": "manifest",
+        "url": "https://app.flowcv.com/manifest.webmanifest"
+      },
+      {
+        "method": "GET",
+        "type": "xhr",
+        "url": "https://app.flowcv.com/pubcache/published-resume-templates"
+      },
+      {
+        "method": "GET",
+        "type": "xhr",
+        "url": "https://app.flowcv.com/api/auth/init_user"
+      },
+      {
+        "method": "POST",
+        "type": "ping",
+        "url": "https://app.flowcv.com/clientlog"
+      }
+    ]
+  }
+}
