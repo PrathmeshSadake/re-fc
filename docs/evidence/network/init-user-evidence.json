@@ -1,0 +1,15 @@
+{
+  "evidence_id": "ev_c5937865a1fc84ae68707aec78583511f4f651ce8c63c0665c40dac1de98afa8",
+  "operation": "capture_browser_scenario",
+  "confidence": "observed",
+  "decoded_body": {
+    "success": true,
+    "data": {
+      "user": null,
+      "currentPlan": "free"
+    },
+    "error": "",
+    "code": 200
+  },
+  "note": "Body decoded from the REA network-content base64. Cookie values omitted."
+}

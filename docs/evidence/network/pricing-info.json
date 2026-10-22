@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "data": {
+    "pricing": {
+      "countryCode": "US",
+      "basicV2": {
+        "1": {
+          "amount": 1100,
+          "currency": "usd"
+        },
+        "12": {
+          "amount": 3600,
+          "currency": "usd"
+        }
+      },
+      "proV2": {
+        "1": {
+          "amount": 1900,
+          "currency": "usd"
+        },
+        "3": {
+          "amount": 3600,
+          "currency": "usd",
+          "available": true
+        },
+        "12": {
+          "amount": 6000,
+          "currency": "usd"
+        }
+      },
+      "sig": {
+        "amount": 3200,
+        "currency": "usd"
+      },
+      "web": {
+        "amount": 2400,
+        "currency": "usd"
+      }
+    }
+  },
+  "error": "",
+  "code": 200
+}

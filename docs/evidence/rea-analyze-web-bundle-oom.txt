@@ -1,0 +1,13 @@
+REA 6.7.0 analyze-web-bundle against the FlowCV app page
+(target 06D4AB76F958B6DAE5EE491337944535, origin https://app.flowcv.com)
+exited 134 after about 44 seconds. The output JSON stayed 0 bytes.
+The process died in the Node heap while parsing the captured bundles:
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+
+The same command succeeded on the marketing page https://flowcv.com/, which
+only had four small scripts (evidence ev_4654d27dcf8b906edc7fc512fee14faac8679fac53bc97218eda86c0929fbf0d).
+
+The app bundles are about 2.6 MB and 2.3 MB of minified JavaScript. They were
+inspected afterwards as files downloaded from the URLs REA's scenario capture
+recorded. That file read is separate from REA's AST analysis.
